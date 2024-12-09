@@ -65,9 +65,9 @@
       /* Image container styling */
       .image-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-template-rows: repeat(3, auto); /* Ensures only 3 rows */
-        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr; /* Ensures 3 columns */
+        grid-template-rows: auto, auto, auto; /* Ensures 3 rows */
+        gap: 20px; /* Spacing between images */
         padding: 20px;
       }
 
