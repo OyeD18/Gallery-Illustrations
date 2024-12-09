@@ -20,7 +20,6 @@
       .wrapper {
         background-color: #FFF4E3;
         width: 92%;   
-        height: auto;
         max-width: 1200px;
         margin: 20px auto;       
         padding: 20px;           
@@ -70,16 +69,15 @@
 
       /* Image container styling */
       .image-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px; /* Adds spacing between images */
-        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+        gap: 20px; /* Spacing between images */
+        padding: 20px;
         margin-top: 20px;
       }
 
       .image-container img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -110,9 +108,9 @@
         <div class="image-container">
           <img src="eater.jpg" alt="Trad1">
           <img src="inprog.jpg" alt="Tra2">
-          <img src="dodu.jpg" alt="Trad3">
           <img src="deeer.jpg" alt="Trad4">
           <img src="book.jpg" alt="Trad5">
+          <img src="dodu.jpg" alt="Trad3">
         </div>
       </section>
 
@@ -131,8 +129,8 @@
       <section>
         <h2>Character Design</h2>
         <div class="image-container">
-          <img src="character1.jpg" alt="CharDe1">
-          <img src="character2.jpg" alt="CharDe2">
+          <img src="character1.jpg" alt="CharDe1" style="data-width:60px;height:270px;">
+          <img src="character2.jpg" alt="CharDe2" style="data-width:48px;height:450px;">
         </div>
       </section>
     </div>
