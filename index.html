@@ -1,47 +1,48 @@
 <!DOCTYPE html>
-<html lang="en-CA">
+<html lang="eng-CA">
   <head>
     <meta charset="utf-8">
-    <title>The Gallery2</title>
+    <title>Illustrations</title>
+    <!-- Created by Dolapo Ajiboye on the 06/12/2024 -->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Italianno&display=swap" rel="stylesheet">
+    
     <style>
       body {
         color: #666666;
         background-color: #FDC56A;
         background-position: center;
         margin: 0px;
-        font-family: 'Indie Flower', cursive;
+        font-family: 'Indie Flower', cursive; 
         text-align: center;
       }
+
       .wrapper {
         background-color: #FFF4E3;
-        width: 92%;
+        width: 92%;   
+        height: 90%;
         max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-        border-radius: 10px;
+        margin: 20px auto;       
+        padding: 20px;           
+        border-radius: 10px; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      #header {
-        height: auto;
-        background-color: #FFF4E3;
-      }
-
-      h1 {
-        margin: 10px 0;
       }
 
       .italianno {
         font-family: 'Italianno', cursive;
-        font-size: 8em;
+        font-size: 6em;
         font-weight: 300;
-        margin: 0;
+        margin: 20px 0;
       }
 
       /* Navigation bar */
+      #nav {
+        margin-top: 20px; /* Adjust navbar position */
+      }
+
       #nav ul {
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -58,7 +59,6 @@
         text-decoration: none;
         color: #000000;
         font-size: 1.2em;
-        
         padding: 10px 20px;
         display: block;
         transition: color 0.3s ease;
@@ -68,119 +68,67 @@
         color: #FDC56A;
       }
 
-      /* Introduction */
-      .introduction {
-        margin: 40px 0;
-      }
-
-      .introduction p {
-        font-size: 1.2em;
-        line-height: 1.6em;
-        margin: 0 20px;
-      }
-
-      /* Section titles */
-      .section-title {
-        font-size: 1.5em;
-        margin: 30px 0 10px;
-        font-weight: bold;
-      }
-
-      /* Section separator */
-      .separator {
-        border: none;
-        border-top: 2px solid #333; /* Solid line with desired color */
-        margin: 30px 0; /* Adjust spacing above and below */
-      }
-
-      /* Hobbies and Contact Me sections */
-      .hobbies, .contact-me {
+      /* Image container styling */
+      .image-container {
         display: flex;
-        justify-content: center;
-        gap: 30px;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Adds spacing between images */
+        padding: 0 10px;
+        margin-top: 20px;
       }
 
-      .hobbies div, .contact-me div {
-        text-align: center;
-        margin: 10px;
-      }
-
-      .hobbies img, .contact-me img {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 10px;
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
+      <!-- Navigation Bar -->
+      <div id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Illustrations</a></li>
+          <li><a href="#">UI Design</a></li>
+          <li><a href="#">3D Modelling</a></li>
+          <li><a href="#">Animations</a></li>
+        </ul>
+      </div>
+
       <!-- Header -->
       <div id="header">
-        <h1>Dolapo Ajiboye</h1>
-        <h1 class="italianno">Portfolio</h1>
-        <div id="nav">
-          <ul>
-            <li><a href="#">Illustrations</a></li>
-            <li><a href="#">UI Design</a></li>
-            <li><a href="#">3D Modelling</a></li>
-            <li><a href="#">Animations</a></li>
-          </ul>
-        </div>
+        <h1 class="italianno">Illustrations</h1>
       </div>
-      
-      <!-- Introduction -->
-      <section class="introduction">
-        <div class="separator"></div>
-        <h2>Hello!</h2>
-        <p>
-          My name is Oyedolapo Ajiboye, but you can call me Dolapo. 
-          I'm a second-year University of Waterloo student studying Global Business and Digital Arts (GBDA). 
-          I'm passionate about illustration and graphic design, and always ready to work with others with similar interests.
-          Welcome to my portfolio.
-        </p>
-        <div class="separator"></div>
-      </section>
-      
-      <!-- Hobbies Section -->
+
+      <!-- Content Sections -->
       <section>
-        <h2 class="section-title">Hobbies</h2>
-        <div class="hobbies">
-          <div>
-            <img src="spraycan.png" alt="Drawing">
-            <p>Draw</p>
-          </div>
-          <div>
-            <img src="game.png" alt="Gaming">
-            <p>Game</p>
-          </div>
-          <div>
-            <img src="skateboard.png" alt="Skateboarding">
-            <p>Skateboard</p>
-          </div>
+        <h2>Traditional</h2>
+        <div class="image-container">
+          <img src="traditional1.png" alt="Traditional Art 1">
+          <img src="traditional2.png" alt="Traditional Art 2">
+          <img src="traditional3.png" alt="Traditional Art 3">
         </div>
-        <div class="separator"></div>
       </section>
 
-      <!-- Contact Me Section -->
       <section>
-        <h2 class="section-title">Contact Me</h2>
-        <div class="section-separator"></div>
-        <div class="contact-me">
-          <div>
-            <img src="email.png" alt="Email">
-            <p>dajiboye@gmail.com</p>
-          </div>
-          <div>
-            <img src="instagram.png" alt="Instagram">
-            <p>oyedolapoajiboye</p>
-          </div>
-          <div>
-            <img src="linkedin.png" alt="LinkedIn">
-            <p>oyeD18</p>
-          </div>
+        <h2>Digital</h2>
+        <div class="image-container">
+          <img src="digital1.png" alt="Digital Art 1">
+          <img src="digital2.png" alt="Digital Art 2">
+          <img src="digital3.png" alt="Digital Art 3">
         </div>
-        <div class="section-separator"></div>
+      </section>
+
+      <section>
+        <h2>Character Design</h2>
+        <div class="image-container">
+          <img src="character1.png" alt="Character Design 1">
+          <img src="character2.png" alt="Character Design 2">
+        </div>
       </section>
     </div>
   </body>
